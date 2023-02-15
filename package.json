@@ -39,8 +39,8 @@
   },
   "devDependencies": {
     "@vant/cli": "^5.0.0",
-    "sass": "^1.49.7",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "sass": "^1.49.7"
   },
   "eslintConfig": {
     "root": true,
@@ -54,11 +54,5 @@
   "browserslist": [
     "Chrome >= 51",
     "iOS >= 10"
-  ],
-  "dependencies": {
-    "@types/jest": "^29.4.0",
-    "@types/node": "^18.13.0",
-    "typescript": "^4.9.5"
-  },
-  "web-types": "lib/web-types.json"
+  ]
 }
