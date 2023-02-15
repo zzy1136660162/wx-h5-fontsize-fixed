@@ -4,7 +4,7 @@ const fontsizeFixedProps = {
     enable: Boolean
 }
 declare global {
-    const WeixinJSBridge: any;
+    var WeixinJSBridge: any;
 
     interface Window {
         WeixinJSBridge: any
