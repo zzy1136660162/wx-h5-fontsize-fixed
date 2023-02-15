@@ -1,5 +1,5 @@
 export default {
-  name: '有爱wx-h5-fontsize-fixed',
+  name: 'wx-h5-fontsize-fixed',
   build: {
     css: {
       preprocessor: 'less',
@@ -9,7 +9,7 @@ export default {
     },
   },
   site: {
-    title: '有爱wx-h5-fontsize-fixed',
+    title: 'wx-h5-fontsize-fixed',
     logo: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
     nav: [
       {

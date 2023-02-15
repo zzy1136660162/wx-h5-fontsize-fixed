@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "",
   "main": "lib/wx-h5-fontsize-fixed.js",
-  "module": "es/index.js",
+  "module": "es/index.mjs",
   "style": "lib/index.css",
   "typings": "lib/index.d.ts",
   "files": [
@@ -37,8 +37,8 @@
   },
   "devDependencies": {
     "@vant/cli": "^5.0.0",
-    "vue": "^3.0.0",
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "vue": "^3.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -52,5 +52,10 @@
   "browserslist": [
     "Chrome >= 51",
     "iOS >= 10"
-  ]
+  ],
+  "dependencies": {
+    "@types/node": "^18.13.0",
+    "typescript": "^4.9.5"
+  },
+  "web-types": "lib/web-types.json"
 }

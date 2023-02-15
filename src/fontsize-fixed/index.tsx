@@ -1,6 +1,6 @@
-import {defineComponent, onMounted, useSlots} from "vue";
+import {defineComponent, ExtractPropTypes, onMounted, useSlots} from "vue";
 
-const currentProps = {
+const fontsizeFixedProps = {
     enable: Boolean
 }
 declare global {
@@ -14,9 +14,10 @@ declare global {
         attachEvent: any
     }
 }
+export type FontsizeFixedProps = ExtractPropTypes<typeof fontsizeFixedProps>
 export default defineComponent({
     name: 'fontsize-fixed',
-    props: currentProps,
+    props: fontsizeFixedProps,
     setup: (props) => {
         const WeixinJSBridge = window.WeixinJSBridge;
         onMounted(async () => {
@@ -40,6 +41,7 @@ export default defineComponent({
                         document.attachEvent('onWeixinJSBridgeReady', handleFontSize)
                     }
                 }
+
                 function handleFontSize() {
                     // 设置网页字体为默认大小
                     WeixinJSBridge.invoke('setFontSizeCallback', {fontSize: 0})
