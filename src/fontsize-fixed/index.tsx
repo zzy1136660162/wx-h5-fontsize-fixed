@@ -1,4 +1,5 @@
 import {defineComponent, ExtractPropTypes, onMounted, useSlots} from "vue";
+import './jweixin-1.6.0'
 
 const fontsizeFixedProps = {
     enable: Boolean

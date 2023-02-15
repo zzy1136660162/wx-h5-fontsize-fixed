@@ -6,6 +6,10 @@ specifiers:
   '@vant/cli': ^5.0.0
   sass: ^1.49.7
   vue: ^3.0.0
+  wx-jsapi: ^0.0.1
+
+dependencies:
+  wx-jsapi: 0.0.1
 
 devDependencies:
   '@types/jest': 29.4.0
@@ -612,6 +616,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /wx-jsapi/0.0.1:
+    resolution: {integrity: sha512-jqvmNVzgkRe5nVBdE46FFqwRXKZC7wmpxGWZGpeOXqqEYBDjALaEyy56LBLspPyx57RAtcTzZi14xrzWn4jPZw==}
+    dev: false
 
   registry.npmmirror.com/@algolia/autocomplete-core/1.7.4:
     resolution: {integrity: sha512-daoLpQ3ps/VTMRZDEBfU8ixXd+amZcNJ4QSP3IERGyzqnL5Ch8uSRFt/4G8pUvW9c3o6GA4vtVv4I4lmnkdXyg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-core/-/autocomplete-core-1.7.4.tgz}
