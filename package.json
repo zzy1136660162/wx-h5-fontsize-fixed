@@ -1,6 +1,6 @@
 {
   "name": "wx-h5-fontsize-fixed",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "lib/wx-h5-fontsize-fixed.cjs.js",
   "module": "es/index.mjs",
@@ -19,7 +19,8 @@
     "build": "vant-cli build",
     "build:site": "vant-cli build-site",
     "npm:login": "npm login --registry=https://registry.npmjs.org",
-    "release": "vant-cli release --tag next ",
+    "release": "vant-cli release --tag next",
+    "release:latest": "vant-cli release --tag latest",
     "release:site": "pnpm build:site && npx gh-pages -d site-dist",
     "test:watch": "vant-cli test --watch",
     "test:coverage": "open test/coverage/index.html"
