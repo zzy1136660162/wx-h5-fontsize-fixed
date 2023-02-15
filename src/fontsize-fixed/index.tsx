@@ -30,6 +30,7 @@ export default defineComponent({
             ele.innerHTML = style;
             document.getElementsByTagName('head')[0].appendChild(ele);
             (function () {
+                console.log(WeixinJSBridge)
                 if (typeof WeixinJSBridge == 'object' && typeof WeixinJSBridge.invoke == 'function') {
                     handleFontSize()
                 } else {
