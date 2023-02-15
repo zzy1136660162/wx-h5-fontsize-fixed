@@ -1,8 +1,13 @@
 export default {
   name: 'wx-h5-fontsize-fixed',
   build: {
+    packageManager: 'pnpm',
+    extensions: {
+      esm: '.mjs',
+    },
     css: {
       preprocessor: 'less',
+      removeSourceFile: true,
     },
     site: {
       publicPath: '/wx-h5-fontsize-fixed/',
