@@ -18,7 +18,7 @@ export type FontsizeFixedProps = ExtractPropTypes<typeof fontsizeFixedProps>
 export default defineComponent({
     name: 'fontsize-fixed',
     props: fontsizeFixedProps,
-    setup: (props) => {
+    setup: () => {
         const WeixinJSBridge = window.WeixinJSBridge;
         onMounted(async () => {
             var style = "body {\n" +
