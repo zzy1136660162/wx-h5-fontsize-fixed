@@ -70,8 +70,5 @@
   "browserslist": [
     "Chrome >= 51",
     "iOS >= 10"
-  ],
-  "dependencies": {
-    "wx-jsapi": "^0.0.1"
-  }
+  ]
 }
