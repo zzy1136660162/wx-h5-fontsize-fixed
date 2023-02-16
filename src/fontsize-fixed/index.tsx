@@ -1,7 +1,7 @@
 import {defineComponent, ExtractPropTypes, onMounted, useSlots} from "vue";
 
 const fontsizeFixedProps = {
-    enable: Boolean
+    enable: {type: Boolean, default: true, required: true}
 }
 declare global {
     var WeixinJSBridge: any;
@@ -53,8 +53,6 @@ export default defineComponent({
                     }
                 })()
             }
-
-
         }
         onMounted(async () => {
             getInitFunc()
