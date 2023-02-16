@@ -29,7 +29,20 @@
     "node": ">=10",
     "pnpm": ">=3"
   },
-  "author": "",
+  "author": "Teacher-Zhang",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "vue",
+    "vue3",
+    "mobile",
+    "fontsize",
+    "wx",
+    "weixin",
+    "wechart",
+    "wechart-fontsize",
+    "wechart-fontsize-fixed"
+  ],
   "nano-staged": {
     "*.md": "prettier --write",
     "*.{ts,tsx,js,vue,less,scss}": "prettier --write",
