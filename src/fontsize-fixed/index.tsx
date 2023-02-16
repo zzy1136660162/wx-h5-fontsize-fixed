@@ -20,7 +20,7 @@ export default defineComponent({
     props: fontsizeFixedProps,
     setup: (props) => {
         const getInitFunc = () => {
-            WeixinJSBridge = window.WeixinJSBridge
+           const  WeixinJSBridge = window.WeixinJSBridge
             if (props?.enable) {
                 var style = "body {\n" +
                     "  -webkit-text-size-adjust: 100% !important;\n" +
