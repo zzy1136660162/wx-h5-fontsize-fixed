@@ -20,7 +20,7 @@ export default defineComponent({
     props: fontsizeFixedProps,
     setup: (props) => {
         const getInitFunc = () => {
-           const  WeixinJSBridge = window.WeixinJSBridge
+
             if (props?.enable) {
                 var style = "body {\n" +
                     "  -webkit-text-size-adjust: 100% !important;\n" +
@@ -31,25 +31,25 @@ export default defineComponent({
                 ele.innerHTML = style;
                 document.getElementsByTagName('head')[0].appendChild(ele);
                 (function () {
-                    console.log(WeixinJSBridge,'wxh5-WeixinJSBridge')
-                    if (typeof WeixinJSBridge == 'object' && typeof WeixinJSBridge.invoke == 'function') {
+                    console.log(window.WeixinJSBridge, 'wxh5-WeixinJSBridge')
+                    if (typeof window.WeixinJSBridge == 'object' && typeof window.WeixinJSBridge.invoke == 'function') {
                         handleFontSize()
                     } else {
                         if (document.addEventListener) {
                             document.addEventListener('WeixinJSBridgeReady', handleFontSize, false)
                         } else if (document.attachEvent) {
                             document.attachEvent('WeixinJSBridgeReady', handleFontSize)
-
                             document.attachEvent('onWeixinJSBridgeReady', handleFontSize)
                         }
                     }
 
                     function handleFontSize() {
+                        console.log(window.WeixinJSBridge, 'wxh5-WeixinJSBridge2')
                         // 设置网页字体为默认大小
-                        WeixinJSBridge.invoke('setFontSizeCallback', {fontSize: 0})
+                        window.WeixinJSBridge.invoke('setFontSizeCallback', {fontSize: 0})
                         // 重写设置网页字体大小的事件
-                        WeixinJSBridge.on('menu:setfont', () => {
-                            WeixinJSBridge.invoke('setFontSizeCallback', {fontSize: 0})
+                        window.WeixinJSBridge.on('menu:setfont', () => {
+                            window.WeixinJSBridge.invoke('setFontSizeCallback', {fontSize: 0})
                         })
                     }
                 })()
