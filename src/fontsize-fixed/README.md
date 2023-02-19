@@ -2,7 +2,7 @@
 
 ### 介绍
 
-FontsizeFixed 是一个示例按钮组件
+FontsizeFixed 是一个在微信h5中固定字体大小的vue组件
 
 ### 引入
 
